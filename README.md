@@ -10,13 +10,13 @@ An OctoberCMS plugin to add list of the recently added articles to your blog
 
 - setup the plugin in the page where you want to use it.
 
-[](https://i.ibb.co/RcdLyPN/2021-01-20-13-39-20-www-localhost-b073ab81d61e.png)
+![](https://i.ibb.co/RcdLyPN/2021-01-20-13-39-20-www-localhost-b073ab81d61e.png)
 
 - inject the plugin inside your page
 
 example: `{% component 'recentArticles' %}`
 
-[](https://i.ibb.co/NtfJ2X9/2021-01-20-13-40-09-www-localhost-2cee55e8ecee.png)
+![](https://i.ibb.co/NtfJ2X9/2021-01-20-13-40-09-www-localhost-2cee55e8ecee.png)
 
 
 ## Contribtion:
