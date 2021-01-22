@@ -6,7 +6,7 @@ An OctoberCMS plugin to add list of the recently added articles to your blog
 
 ## How To Use:
 
-- install the plugin from `[the plugins store](https://octobercms.com/plugins)`
+- install the plugin from [the plugins store](https://octobercms.com/plugins)
 
 - setup the plugin in the page where you want to use it.
 
