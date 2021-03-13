@@ -1,4 +1,4 @@
-<?php namespace AM77\Recentarticles;
+<?php namespace Developatic\Recentarticles;
 
 use Backend;
 use System\Classes\PluginBase;
@@ -17,8 +17,8 @@ class Plugin extends PluginBase
     {
         return [
             'name'        => 'recentarticles',
-            'description' => 'A list of the recently added articles',
-            'author'      => 'AM77',
+            'description' => 'A list of the recent articles',
+            'author'      => 'Developatic',
             'icon'        => 'icon-clock-o'
         ];
     }
@@ -28,14 +28,20 @@ class Plugin extends PluginBase
      *
      * @return void
      */
-    public function register() { }
+    public function register()
+    {
+
+    }
 
     /**
      * Boot method, called right before the request route.
      *
      * @return array
      */
-    public function boot() { }
+    public function boot()
+    {
+
+    }
 
     /**
      * Registers any front-end components implemented in this plugin.
@@ -45,7 +51,7 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'AM77\Recentarticles\Components\RecentArticles' => 'recentArticles',
+            'Developatic\Recentarticles\Components\RecentArticles' => 'recentArticles',
         ];
     }
 
@@ -57,7 +63,7 @@ class Plugin extends PluginBase
     public function registerPermissions()
     {
         return [
-            'am77.recentarticles.some_permission' => [
+            'developatic.recentarticles.some_permission' => [
                 'tab' => 'recentarticles',
                 'label' => 'Some permission'
             ],
@@ -71,12 +77,14 @@ class Plugin extends PluginBase
      */
     public function registerNavigation()
     {
+        return []; // Remove this line to activate
+
         return [
             'recentarticles' => [
                 'label'       => 'recentarticles',
-                'url'         => Backend::url('am77/recentarticles/mycontroller'),
-                'icon'        => 'icon-clock-o',
-                'permissions' => ['am77.recentarticles.*'],
+                'url'         => Backend::url('developatic/recentarticles/mycontroller'),
+                'icon'        => 'icon-leaf',
+                'permissions' => ['developatic.recentarticles.*'],
                 'order'       => 500,
             ],
         ];

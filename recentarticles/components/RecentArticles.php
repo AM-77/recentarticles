@@ -13,7 +13,7 @@ class RecentArticles extends ComponentBase
     {
         return [
             'name' => 'Recent Articles',
-            'description' => 'A list of the recently added articles'
+            'description' => 'A list of the last recent added articles'
         ];
     }
 
@@ -64,7 +64,7 @@ class RecentArticles extends ComponentBase
 
         $posts = BlogPost::with('categories')->listFrontEnd([
             'perPage'    => $this->property('postsPerPage'),
-            'sort'       => $this->property('sortOrder'),
+            'sort'       => $this->sortOrder,
             'published'  => $isPublished,
             'exceptPost' => $this->property('exceptPost'),
         ]);
